@@ -245,6 +245,51 @@ footer {
   width: 11px;
   height: 11px;
 }
+.modal-window-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.modal-window-subtitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.modal-window-consent {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.modal-window-submit-button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+  background-color: ;
+}
+textarea[placeholder] {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 /* Section properties */
 .properties-icon-box {
   width: 100%;
@@ -653,18 +698,19 @@ input[placeholder] {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  /* padding: 10px 28px; */
+  cursor: pointer;
 }
 .footer-submit-button-text {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  /* display: flex;
-  align-items: center;
-  text-align: center; */
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
+  margin-right: 10px;
 }
+/* .footer-submit-button-icon {
+} */
 .social-media-icons li a {
   display: inline-flex;
   background-color: var(--primary-background-color);
@@ -679,7 +725,7 @@ input[placeholder] {
 }
 input {
   height: 50px;
-  background-color: var(--secondary-background-color);
+  background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--input-field-color);
   padding: 10px 28px;

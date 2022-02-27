@@ -47,7 +47,22 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <p></p>
+                    <form class="modal-window-form">
+                        <h2 class="modal-window-title">Оставьте свои данные, мы вам перезвоним</h2>
+                        <label class="modal-window-subtitle" for="id_name">Имя</label>
+                        <input id="id_name" type="text" name="name" placeholder="">
+                        <label class="modal-window-subtitle" for="id_phone">Телефон</label>
+                        <input id="id_phone" type="tel" name="phone" placeholder="">
+                        <label class="modal-window-subtitle" for="id_email">Почта</label>
+                        <input id="id_email" type="email" name="email" placeholder="">
+                        <label class="modal-window-subtitle"for="id_comment">Комментарий</label>
+                        <textarea id="id_comment" placeholder="Введите текст"></textarea>
+                        <label>
+                        <input class="modal-window-consent" type="checkbox" name="checkbox">
+                            Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                        </label>
+                        <button class="modal-window-submit-button" type="submit">Отправить</button>
+                    </form>
                     <button data-modal-close type="button" class="close-modal-button"><svg class="modal-icon"><use href="./images/icons.svg#icon-vector"></use></svg></button>
                 </div>
             </div>
@@ -170,7 +185,7 @@
                 <form>
                     <label for="user_email" class="footer-form-title">Подпишитесь на рассылку</label>
                     <input type="email" name="email" id="user_email" placeholder="E-mail">
-                    <button class="footer-submit-button" type="submit"><span class="footer-submit-button-text">Подписаться</span></button>
+                    <button class="footer-submit-button" type="submit"><span class="footer-submit-button-text">Подписаться</span><svg class="footer-submit-button-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg></button>
                 </form>
             </div>
         </div>
