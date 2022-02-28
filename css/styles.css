@@ -228,6 +228,7 @@ footer {
   width: 528px;
   height: 580px;
   border-radius: 4px;
+  padding: 40px;
 }
 .close-modal-button {
   cursor: pointer;
@@ -258,14 +259,23 @@ footer {
 .modal-window-subtitle input {
   width: 448px;
   height: 40px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
-.modal-window-subtitle.comment input {
-  width: ;
-  height: ;
+textarea {
+  position: relative;
+  width: 448px;
+  height: 96px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  /* box-sizing: border-box; */
+  border-radius: 4px;
 }
 .modal-window-subtitle {
-  margin-bottom: 12px;
-
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
@@ -275,14 +285,17 @@ footer {
 .modal-window-subtitle.person input {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 9a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.003 0-6 1.005-6 3v.75c0 .412.337.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z' fill='%23212121'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
+  background-position: 12px 50%;
 }
 .modal-window-subtitle.phone input {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m13.996 11.123-1.838-.21a1.44 1.44 0 0 0-1.187.412l-1.332 1.332a10.888 10.888 0 0 1-4.769-4.77L6.21 6.55a1.44 1.44 0 0 0 .412-1.187l-.21-1.824a1.448 1.448 0 0 0-1.44-1.28H3.72c-.818 0-1.498.68-1.448 1.497.384 6.18 5.327 11.116 11.5 11.5.817.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.432Z' fill='%23212121'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
+  background-position: 12px 50%;
 }
 .modal-window-subtitle.email input {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 3H3c-.825 0-1.492.675-1.492 1.5l-.008 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9c0-.825-.675-1.5-1.5-1.5Zm-.3 3.188L9.398 9.502a.759.759 0 0 1-.796 0L3.3 6.188a.637.637 0 1 1 .675-1.08L9 8.25l5.025-3.143a.637.637 0 1 1 .675 1.08Z' fill='%23212121'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
+  background-position: 12px 50%;
 }
 .modal-window-consent {
   font-weight: normal;
@@ -308,6 +321,11 @@ footer {
   color: var(--primary-background-color);
 }
 textarea[placeholder] {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
