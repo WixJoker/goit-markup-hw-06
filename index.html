@@ -57,9 +57,8 @@
                         <input type="email" name="email" placeholder=""></label>
                         <label class="modal-window-subtitle comment">Комментарий
                         <textarea placeholder="Введите текст"></textarea></label>
-                        <label>
-                        <input class="modal-window-consent" type="checkbox" name="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
-                        </label>
+                        <div class="modal-window-consent"><input type="checkbox" name="checkbox" id="user_consent"/>
+                        <label for="user_consent">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label></div>
                         <div class="form-button-box"><button class="modal-window-submit-button" type="submit">Отправить</button></div>
                     </form>
                     <button data-modal-close type="button" class="close-modal-button"><svg class="modal-icon"><use href="./images/icons.svg#icon-vector"></use></svg></button>
@@ -183,7 +182,7 @@
             <div class="footer-form">
                 <form>
                     <label for="user_email" class="footer-form-title">Подпишитесь на рассылку</label>
-                    <div class="gft"><input type="email" name="email" id="user_email" placeholder="E-mail">
+                    <div class="footer-form-box"><input type="email" name="email" id="user_email" placeholder="E-mail">
                     <button class="footer-submit-button" type="submit"><span class="footer-submit-button-text">Подписаться</span><svg class="footer-submit-button-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg></button></div>
                 </form>
             </div>
