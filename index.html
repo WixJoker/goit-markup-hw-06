@@ -43,11 +43,11 @@
         <section class="section hero centered">
             <div class="container">
             <h1 class="hero-title container">Эффективные решения для вашего бизнеса</h1>
-            <div class="button=container"><button data-modal-open type="button" class="hero-button">Заказать услугу</button></div>
+            <div class="button-container"><button data-modal-open type="button" class="hero-button">Заказать услугу</button></div>
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <form class="modal-window-form">
+                    <form class="modal-window-form js-speaker-form">
                         <p class="modal-window-title">Оставьте свои данные, мы вам перезвоним</p>
                         <label class="modal-window-subtitle person">Имя
                         <input type="text" name="name" placeholder=""></label>
@@ -55,12 +55,12 @@
                         <input type="tel" name="phone" placeholder=""></label>
                         <label class="modal-window-subtitle email">Почта
                         <input type="email" name="email" placeholder=""></label>
-                        <label class="modal-window-subtitle comment" for="id_comment">Комментарий</label>
-                        <textarea id="id_comment" placeholder="Введите текст"></textarea>
+                        <label class="modal-window-subtitle comment">Комментарий
+                        <textarea placeholder="Введите текст"></textarea></label>
                         <label>
                         <input class="modal-window-consent" type="checkbox" name="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
                         </label>
-                        <button class="modal-window-submit-button" type="submit">Отправить</button>
+                        <div class="form-button-box"><button class="modal-window-submit-button" type="submit">Отправить</button></div>
                     </form>
                     <button data-modal-close type="button" class="close-modal-button"><svg class="modal-icon"><use href="./images/icons.svg#icon-vector"></use></svg></button>
                 </div>
@@ -183,8 +183,8 @@
             <div class="footer-form">
                 <form>
                     <label for="user_email" class="footer-form-title">Подпишитесь на рассылку</label>
-                    <input type="email" name="email" id="user_email" placeholder="E-mail">
-                    <button class="footer-submit-button" type="submit"><span class="footer-submit-button-text">Подписаться</span><svg class="footer-submit-button-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg></button>
+                    <div class="gft"><input type="email" name="email" id="user_email" placeholder="E-mail">
+                    <button class="footer-submit-button" type="submit"><span class="footer-submit-button-text">Подписаться</span><svg class="footer-submit-button-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg></button></div>
                 </form>
             </div>
         </div>
