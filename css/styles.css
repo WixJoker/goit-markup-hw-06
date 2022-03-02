@@ -287,6 +287,7 @@ textarea {
   color: var(--primary-text-color);
   margin-right: 0;
   text-align: left;
+  margin-bottom: 4px;
 }
 .modal-window-subtitle.person input {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 9a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.003 0-6 1.005-6 3v.75c0 .412.337.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z' fill='%23212121'/%3E%3C/svg%3E");
@@ -303,17 +304,24 @@ textarea {
   background-repeat: no-repeat;
   background-position: 12px 50%;
 }
-.modal-window-consent {
+/* .modal-consent-box {
   display: inline-flex;
+  align-items: center;
+} */
+.modal-consent-box input[type='checkbox'] {
+  height: 14px;
+  margin: 0 7px 0 0;
 }
-.modal-window-consent input {
+.modal-consent-box {
+  margin-bottom: 30px;
+}
+.modal-window-consent {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-
-  margin: 0;
+  margin-bottom: 30px;
 }
 .modal-window-submit-button {
   /* justify-content: center; */
