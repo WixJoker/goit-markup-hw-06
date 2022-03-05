@@ -47,6 +47,7 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
+                    <button data-modal-close type="button" class="close-modal-button"><svg class="modal-icon"><use href="./images/icons.svg#icon-vector"></use></svg></button>
                     <form class="modal-window-form js-speaker-form">
                         <p class="modal-window-title">Оставьте свои данные, мы вам перезвоним</p>
                         <div class="modal-box">
@@ -60,21 +61,22 @@
                             <svg class="modal-input-icon" width="18" height="18"><use href="./images/icons.svg#icon-phone-black"></use></svg>
                         </div>
                         <div class="modal-box">
-                            <label class="modal-window-subtitle" for="user_email">Почта</label>
-                            <input class="modal-input" id="user_email" type="email" name="email" placeholder=" ">
+                            <label class="modal-window-subtitle" for="user_modal_email">Почта</label>
+                            <input class="modal-input" id="user_modal_email" type="email" name="email" placeholder=" ">
                             <svg class="modal-input-icon" width="18" height="18"><use href="./images/icons.svg#icon-email-black"></use></svg>
                         </div>
-                        <div class="modal-box">
-                            <label class="modal-window-subtitle" for="user_comment">Комментарий</label>
-                            <textarea type="text" name="comment" id="user_comment" placeholder="Введите текст"></textarea>
+                        <div class="modal-box comment">
+                            <label class="modal-window-subtitle">Комментарий</label>
+                            <textarea placeholder="Введите текст"></textarea>
                         </div>
                         <div class="modal-consent-box">
-                            <input class="checkbox" type="checkbox" name="checkbox" id="user_consent"/>
-                            <span class="icon-check-box"><svg class="icon-check" width="15" height="15"><use href="./images/icons.svg#icon-icon-check"></use></svg></span>
-                            <label class="modal-window-consent" for="user_consent">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия договора</a></label></div>
-                        <div class="form-button-box"><button class="modal-window-submit-button" type="submit">Отправить</button></div>
+                            <label class="modal-window-consent">
+                                <input class="checkbox" type="checkbox" name="checkbox"/>
+                                <span class="icon-check-box"></span>Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия договора</a>
+                            </label>
+                        </div>
+                            <button class="modal-window-submit-button" type="submit">Отправить</button>
                     </form>
-                    <button data-modal-close type="button" class="close-modal-button"><svg class="modal-icon"><use href="./images/icons.svg#icon-vector"></use></svg></button>
                 </div>
             </div>
         </section>
@@ -196,7 +198,7 @@
                 <form>
                     <label for="user_email" class="footer-form-title">Подпишитесь на рассылку</label>
                     <div class="footer-form-box"><input type="email" name="email" id="user_email" placeholder="E-mail">
-                    <button class="footer-submit-button" type="submit"><span class="footer-submit-button-text">Подписаться</span><svg class="footer-submit-button-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg></button></div>
+                        <button class="footer-submit-button" type="submit"><span class="footer-submit-button-text">Подписаться</span><svg class="footer-submit-button-icon" width="24" height="24"><use href="./images/icons.svg#icon-icon-send"></use></svg></button></div>
                 </form>
             </div>
         </div>
